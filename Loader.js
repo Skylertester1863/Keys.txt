@@ -10,7 +10,7 @@ ctx.runOnUiThread(new java.lang.Runnable({
       btn.setText("creativo");
       btn.setOnClickListener(new android.view.View.OnClickListener({
         onClick: function () {
-          Player.setGameMode(1);
+          Level.setGameMode(1);
           clientMessage("Sucess");
         }
       }));
