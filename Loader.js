@@ -10,7 +10,6 @@ ctx.runOnUiThread(new java.lang.Runnable({
       btn.setText("creativo");
       btn.setOnClickListener(new android.view.View.OnClickListener({
         onClick: function () {
-          Level.setGameMode(1);
           clientMessage("Sucess");
         }
       }));
@@ -22,7 +21,7 @@ ctx.runOnUiThread(new java.lang.Runnable({
       dialog.setContentView(layout);
       dialog.show();
     } catch (e) {
-      clientMessage("Error: " + e);
+      clientMessage("Error in gui: " + e);
     }
   }
 }));
