@@ -7,7 +7,7 @@ ctx.runOnUiThread(new java.lang.Runnable({
   run: function () {
     try {
       var btn = new android.widget.Button(ctx);
-      btn.setText("creativo");
+      btn.setText("crea");
       btn.setOnClickListener(new android.view.View.OnClickListener({
         onClick: function () {
           clientMessage("Sucess");
