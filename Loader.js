@@ -7,10 +7,11 @@ ctx.runOnUiThread(new java.lang.Runnable({
   run: function () {
     try {
       var btn = new android.widget.Button(ctx);
-      btn.setText("🚀 Script Activo");
+      btn.setText("creativo");
       btn.setOnClickListener(new android.view.View.OnClickListener({
         onClick: function () {
-          clientMessage("✨ Hiciste clic en el botón del Loader!");
+          Player.setGameMode(1);
+          clientMessage("Sucess");
         }
       }));
 
@@ -21,7 +22,7 @@ ctx.runOnUiThread(new java.lang.Runnable({
       dialog.setContentView(layout);
       dialog.show();
     } catch (e) {
-      clientMessage("❌ Error GUI Loader: " + e);
+      clientMessage("Error: " + e);
     }
   }
 }));
